@@ -6,12 +6,12 @@ public class Stringbuilder_buffer {
         StringBuilder sb = new StringBuilder();
         sb.append("Hello");
         System.out.println(sb.reverse());
-        String s = sb.toString();
-        System.out.println(s);
-        sb.reverse();
-        for (int i = 0; i < sb.length(); i++) {
+        //String s = sb.toString();
+       // System.out.println(s);
+        for (int i = sb.length()-1; i >= 0; i--) {
             System.out.print(sb.charAt(i));
         }
+        sb.reverse();
         System.out.println("\n" + "\n");
         System.out.println(sb);
     }
